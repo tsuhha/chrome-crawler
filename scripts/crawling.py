@@ -27,8 +27,8 @@ if __name__ == '__main__':
     PROXY = 'localhost:8080'
     options.add_argument('--proxy-server=http://%s' % PROXY)
 
-#    USERAGENT = 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
-#    options.add_argument('--user-agent=%s' % USERAGENT)
+    USERAGENT = 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    options.add_argument('--user-agent=%s' % USERAGENT)
 
     LANGUAGE = 'ja'
     options.add_argument('--lang=%s' % LANGUAGE)

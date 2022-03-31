@@ -79,8 +79,8 @@ RUN apt-get update && apt-get install -y libnss3-tools \
 COPY docker-entrypoint.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 
-#USER chrome
-#WORKDIR /home/chrome/
+USER root
+WORKDIR /home/chrome/
 
 ENTRYPOINT ["docker-entrypoint.sh"]
-#CMD ["/bin/bash"]
+CMD ["/bin/bash"]
